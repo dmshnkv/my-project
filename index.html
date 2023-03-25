@@ -24,40 +24,100 @@
     <link rel="manifest" href="/my-project/favicon/site.webmanifest" />
     <title>Мой сайт</title>
   </head>
-  <body>
+
+  <body class="base-body">
     <header>
-      <nav>Навигация</nav>
+      <nav class="ng-content">
+        <!-- <a href="">
+          <img src="/my-project/images/logo.png" alt="logo" />
+        </a> -->
+      </nav>
     </header>
-    <body>
-      <div>
-        <img src="/my-project/images/707057110.jpeg" alt="Моё фото" />
-        <h1>Машенков Дмитрий</h1>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sed modi
-          quas accusamus quos mollitia illo ad pariatur distinctio ex provident,
-          sit quae voluptate repudiandae enim! Nesciunt voluptatem ipsum facilis
-          ipsa.
-        </p>
+    <main>
+      <div class="container">
+        <section class="info">
+          <article class="info-text">
+            <h1>Hi, I am John, Creative Technologist</h1>
+            <p>
+              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+              amet sint. Velit officia consequat duis enim velit mollit.
+              Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <a href="" class="btn">Скачать резюме</a>
+          </article>
+          <article class="info-avatar">
+            <img src="/my-project/images/707057110.jpeg" alt="Моё фото" />
+          </article>
+        </section>
+
+        <section class="skills">
+          <h2>Мои навыки</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            soluta voluptatem, perferendis nobis eum alias commodi delectus modi
+            incidunt quia repellendus accusantium fugiat minus porro enim illum
+            repudiandae. Quisquam, repellendus.
+          </p>
+        </section>
+
+        <section class="favorite-places">
+          <h2>Любимые места</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+            soluta voluptatem, perferendis nobis eum alias commodi delectus modi
+            incidunt quia repellendus accusantium fugiat minus porro enim illum
+            repudiandae. Quisquam, repellendus.
+          </p>
+        </section>
       </div>
-      <hr />
-      <h2>Мои социальные сети</h2>
-      <ul>
-        <li>Telegram</li>
-        <li>Instagram</li>
-      </ul>
-      <h2>Хобби</h2>
-      <ol>
-        <li>Программирование</li>
-        <li>Скейтборд</li>
-        <li>Путешествия</li>
-      </ol>
-      <h2>Опыт работы</h2>
-      <table>
-        <tr>
-          123
-        </tr>
-        <td>2</td>
-      </table>
-    </body>
+    </main>
+    <footer>
+      <address class="contacts">
+        <ul class="social">
+          <li>
+            <a href="https://vk.com/dmshnkv" target="_blank">
+              <img
+                src="/my-project/images/vklogo.png"
+                alt="VK logo"
+                width="40"
+                height="40"
+              />
+            </a>
+          </li>
+
+          <li>
+            <a href="https://instagram.com/dmshnkv" target="_blank">
+              <img
+                src="/my-project/images/instagramlogo.png"
+                alt="Inst logo"
+                width="40"
+                height="40"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://t.me/dmshnkv" target="_blank">
+              <img
+                src="/my-project/images/tglogo.png"
+                alt="Telegram logo"
+                width="40"
+                height="40"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="https://GitHub.com/dmshnkv" target="_blank">
+              <img
+                src="/my-project/images/githublogo.png"
+                alt="GitHub logo"
+                width="40"
+                height="40"
+              />
+            </a>
+          </li>
+        </ul>
+        <p>Copyright ©2023 All rights reserved</p>
+      </address>
+    </footer>
   </body>
 </html>
