@@ -7,117 +7,166 @@
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="/favicon/apple-touch-icon.png"
+      href="./favicon/apple-touch-icon.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="/favicon/favicon-32x32.png"
+      href="./favicon/favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="/favicon/favicon-16x16.png"
+      href="./favicon/favicon-16x16.png"
     />
-    <link rel="manifest" href="/favicon/site.webmanifest" />
+    <link rel="manifest" href="./favicon/site.webmanifest" />
     <title>Мой сайт</title>
   </head>
 
-  <body class="base-body">
-    <header>
-      <nav class="ng-content">
-        <!-- <a href="">
-          <img src="/my-project/images/logo.png" alt="logo" />
-        </a> -->
-      </nav>
-    </header>
-    <main>
-      <div class="container">
-        <section class="info">
-          <article class="info-text">
-            <h1>Hi, I am John, Creative Technologist</h1>
-            <p>
-              Amet minim mollit non deserunt ullamco est sit aliqua dolor do
-              amet sint. Velit officia consequat duis enim velit mollit.
-              Exercitation veniam consequat sunt nostrud amet.
-            </p>
-            <a href="" class="btn">Скачать резюме</a>
-          </article>
-          <article class="info-avatar">
-            <img src="/images/707057110.jpeg" alt="Моё фото" />
-          </article>
+  <body class="body">
+    <div class="site-container">
+      <header class="header">
+        <div class="header__container flex">
+          <div class="header__item header-logo">DM</div>
+          <div class="header__item header-menu">
+            <nav class="menu">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Skills</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#">Favorite places</a>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="#social__container">Contact</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <section class="about">
+          <div class="about__container container flex">
+            <div class="about__item-text about-item">
+              <h1 class="about__title first-title">
+                Hi, I am John, <br />
+                Creative Technologist
+              </h1>
+              <p class="about__description description">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do
+                amet sint. Velit officia consequat duis enim velit mollit.
+                Exercitation veniam consequat sunt nostrud amet.
+              </p>
+              <a class="about__btn btn--active" href="#" download="./resume.pdf"
+                >Download Resume</a
+              >
+            </div>
+            <div class="about__item-img about-item">
+              <img
+                class="about__img"
+                src="./images/707057110.jpeg"
+                alt="Моё фото"
+              />
+            </div>
+          </div>
         </section>
 
         <section class="skills">
-          <h2>Мои навыки</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            soluta voluptatem, perferendis nobis eum alias commodi delectus modi
-            incidunt quia repellendus accusantium fugiat minus porro enim illum
-            repudiandae. Quisquam, repellendus.
-          </p>
+          <div class="skills__container container flex">
+            <div class="skills__card-item skills-item">
+              <h2 class="skills__title second-title">Skills</h2>
+              <p class="skills__description description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas soluta voluptatem, perferendis nobis eum alias commodi
+                delectus modi incidunt quia repellendus accusantium fugiat minus
+                porro enim illum repudiandae. Quisquam, repellendus.
+              </p>
+            </div>
+            <div class="skills__card-item skills-item">
+              <h2 class="skills__title second-title">Skills</h2>
+              <p class="skills__description description">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Voluptas soluta voluptatem, perferendis nobis eum alias commodi
+                delectus modi incidunt quia repellendus accusantium fugiat minus
+                porro enim illum repudiandae. Quisquam, repellendus.
+              </p>
+            </div>
+          </div>
         </section>
 
         <section class="favorite-places">
-          <h2>Любимые места</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
-            soluta voluptatem, perferendis nobis eum alias commodi delectus modi
-            incidunt quia repellendus accusantium fugiat minus porro enim illum
-            repudiandae. Quisquam, repellendus.
-          </p>
+          <div class="favorite-places__container container">
+            <h2 class="favorite-places__title second-title">Favorite Places</h2>
+          </div>
         </section>
-      </div>
-    </main>
-    <footer>
-      <address class="contacts">
-        <ul class="social">
-          <li>
-            <a href="https://vk.com/dmshnkv" target="_blank">
-              <img
-                src="/images/vklogo.png"
-                alt="VK logo"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
+      </main>
+      <footer class="footer">
+        <address class="social__container">
+          <ul class="social__list">
+            <li class="social__item">
+              <a
+                class="social__link social__link--vk"
+                href="https://vk.com/dmshnkv"
+                target="_blank"
+              >
+                <img
+                  src="./images/vklogo.png"
+                  alt="VK logo"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
 
-          <li>
-            <a href="https://instagram.com/dmshnkv" target="_blank">
-              <img
-                src="/images/instagramlogo.png"
-                alt="Inst logo"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://t.me/dmshnkv" target="_blank">
-              <img
-                src="/images/tglogo.png"
-                alt="Telegram logo"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-          <li>
-            <a href="https://GitHub.com/dmshnkv" target="_blank">
-              <img
-                src="/images/githublogo.png"
-                alt="GitHub logo"
-                width="40"
-                height="40"
-              />
-            </a>
-          </li>
-        </ul>
-        <p>Copyright ©2023 All rights reserved</p>
-      </address>
-    </footer>
+            <li class="social__item">
+              <a
+                class="social__link social__link--inst"
+                href="https://instagram.com/dmshnkv"
+                target="_blank"
+              >
+                <img
+                  src="./images/instagramlogo.png"
+                  alt="Inst logo"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--tg"
+                href="https://t.me/dmshnkv"
+                target="_blank"
+              >
+                <img
+                  src="./images/tglogo.png"
+                  alt="Telegram logo"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+            <li class="social__item">
+              <a
+                class="social__link social__link--gh"
+                href="https://GitHub.com/dmshnkv"
+                target="_blank"
+              >
+                <img
+                  src="./images/githublogo.png"
+                  alt="GitHub logo"
+                  width="40"
+                  height="40"
+                />
+              </a>
+            </li>
+          </ul>
+          <p>Copyright ©2023 All rights reserved</p>
+        </address>
+      </footer>
+    </div>
   </body>
 </html>
