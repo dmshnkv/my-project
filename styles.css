@@ -7,10 +7,17 @@
   margin: 0;
 }
 
-.container {
+.flex {
+  display: flex;
+}
+
+.site-container {
   max-width: 1152px;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
+}
+
+
+.container {
   padding-top: 4em;
   padding-bottom: 4em;
   padding-left: 148px;
@@ -18,39 +25,41 @@
 }
 
 .header__container {
-  justify-content: space-between;
-  color: #000;
-  margin-left: 19.7%;
-  margin-right: 19.7%;
+  justify-content: end;
+  padding-bottom: 60px;
 }
 
-.header__item {
+.header__menu {
+  padding-right: 60px;
+}
 
-  padding: 10px 15px;
-  font-size: 20px;
+.menu {
+
+}
+
+.menu__icon {
+  display: none;
+
+}
+
+.menu__body {
+
 }
 
 .menu__list {
-
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu__item {
-  display: inline-block;
-
-
+  display: flex;
 }
 
 .menu__link {
-  color: #000;
+  color:#000;
+  font-size: 20px;
   text-decoration: none;
-  margin: 5px;
+  margin: 0px 0px 0px 35px;
 }
 
-.flex {
-  display: flex;
+.menu__link:hover {
+  text-decoration: underline;
 }
 
 .about__item-text {
@@ -58,6 +67,7 @@
 }
 
 .about__item-img {
+  padding-top: 15px;
   width: 40%;
   display: flex;
   justify-content:end;
@@ -88,6 +98,7 @@
 }
 
 .about__btn {
+  text-decoration: none;
   display: inline-flex;
   text-align: center;
   justify-content: center;
@@ -107,6 +118,7 @@
 
 .btn--active:hover {
   background: rgba(0, 0, 0, 0.7);
+  text-decoration: underline;
 }
 
 
@@ -115,7 +127,6 @@
 }
 
 .skills-item {
-  width: 50%;
 }
 
 .second-title {
@@ -134,8 +145,6 @@
 }
 
 .social__container {
-  margin-left: 19.4%;
-  margin-right: 19.4%;
   text-align: center;
 }
 
