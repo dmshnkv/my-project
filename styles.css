@@ -90,11 +90,41 @@
 }
 
 .description {
-  margin-top: 22px;
-  margin-bottom: 30px;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  margin: 22px 0 30px 0;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
+  padding: 0 27px 7px 23px;
+}
+
+.about__description {
+  padding: 0;
+}
+
+.blog__subtitle {
+  font-size: 18px;
+  line-height: 26px;
+  margin: 10px 0 -30px 0;
+  padding: 0 27px 7px 23px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+.subtitle-date {
+  position: relative;
+  margin-right: 58px;
+}
+
+.subtitle-date:after {
+  position: absolute;
+  width: 0px;
+  height: 21px;
+  right: -32px;
+  content: " ";
+  border: 1px solid #000000;
+
 }
 
 .about__btn {
@@ -118,30 +148,44 @@
 
 .btn--active:hover {
   background: rgba(0, 0, 0, 0.7);
-  text-decoration: underline;
 }
 
 
-.skills__container {
+.blog__container {
   background-color: #edf7fa;
+  padding-bottom: 32px;
+
+
 }
 
-.skills-item {
+.blog__card-item1 {
+  margin-right: 20px;
+}
+
+.blog-item {
+  background-color: #fff;
+  box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+  border-radius: 4px;
+ 
 }
 
 .second-title {
   font-weight: 700;
   font-size: 26px;
   line-height: 38px;
-  margin-top: -45px;
+  padding: 24px 21px 0px 23px;
+  margin-block-start: 0;
+  margin-block-end: 0;
 }
 
-.favorite-places__container {
-  /* background-color: cornflowerblue; */
-}
-
-.fp-item {
-  width: 50%;
+.third-title {
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 60px;
+  display: flex;
+  flex-direction: column;
 }
 
 .social__container {
@@ -157,21 +201,19 @@
 .social__item {
   padding-top: 1em;
   display: inline-block;
-  margin: 5px;
-  margin-bottom: 0;
+  margin:0 5px;
 }
 
 
 @media (max-width: 900px) {
-  .flex {
+  .about__container {
     flex-direction: column-reverse;
   }
 
   .container {
-    padding-right: 4px;
-    padding-left: 4px;
-    padding-top: 33px;
-    padding-bottom: 59px;
+    padding: 33px 11px 38px 11px;
+  }
+  .about-item {
     text-align: center;
   }
 
@@ -181,7 +223,8 @@
   }
 
   .about__img {
-    max-width: 70%;
+    max-width: 50%;
+    padding: 0;
   }
 
   .about__title {
@@ -191,6 +234,8 @@
   }
 
   .second-title {
+    font-size: 22px;
+    line-height: 30px;
     margin-top: 0;
   }
 
@@ -198,5 +243,17 @@
     margin-top: 20px;
     margin-bottom: 20px;
 
+  }
+
+  .blog__container {
+    flex-direction: column;
+  }
+
+  .blog__card-item1 {
+    margin-bottom: 17px;
+  }
+
+  .blog-item {
+    width: 100%;
   }
 }
